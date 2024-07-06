@@ -3,6 +3,7 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.44.2",
     "dotenv": "^16.4.5",
-    "langchain": "^0.2.8"
+    "langchain": "^0.2.1",
+    "supabase": "^1.178.2"
   }
 }
