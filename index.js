@@ -3,7 +3,8 @@ import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter';
 import { createClient } from '@supabase/supabase-js';
 import { SupabaseVectorStore } from 'langchain/vectorstores/supabase';
 import { OpenAIEmbeddings } from 'langchain/embeddings/openai';
-
+import dotenv from 'dotenv'
+dotenv.config()
 try{
     const text=await fs.readFile('scrimba-info.txt','utf-8')
     const splitter=new RecursiveCharacterTextSplitter({
@@ -29,7 +30,7 @@ try{
         }
     )
     
-    console.log(output)
+    // console.log(output)
 } catch(err){
     console.log(err)
 }
