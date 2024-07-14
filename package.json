@@ -1,9 +1,17 @@
 {
-  "type": "module",
+  "name": "Scrim-s05krc7",
+  "type":"module",
+  "description": "https://v2.scrimba.com/the-official-langchainjs-course-c02t/~0k",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "@supabase/supabase-js": "^2.44.2",
-    "dotenv": "^16.4.5",
-    "langchain": "^0.0.151",
-    "supabase": "^1.178.2"
-  }
+    "langchain": "0.0.152",
+    "@supabase/supabase-js": "2.36.0",
+    "vite": "latest"
+  },
+  "devDependencies": {}
 }

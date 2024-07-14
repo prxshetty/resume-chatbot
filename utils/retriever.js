@@ -1,7 +1,8 @@
 import { SupabaseVectorStore } from 'langchain/vectorstores/supabase'
 import { OpenAIEmbeddings } from 'langchain/embeddings/openai'
 import { createClient } from '@supabase/supabase-js'
-
+import * as dotenv from 'dotenv'
+dotenv.config()
 const openAIApiKey = process.env.OPENAI_API_KEY
 
 const embeddings = new OpenAIEmbeddings({ openAIApiKey })
