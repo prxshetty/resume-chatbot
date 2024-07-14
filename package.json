@@ -3,7 +3,7 @@
   "type": "module",
   "description": "https://v2.scrimba.com/the-official-langchainjs-course-c02t/~0k",
   "scripts": {
-    "start": "vite",
+    "start": "node server.js",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -18,7 +18,7 @@
     "vite": "latest"
   },
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "keywords": [],
   "author": "",
   "license": "ISC"
