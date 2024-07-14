@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Cinzel:wght@400;700&display=swap');
+
 :root {
     --border-rad-lg: 15px;
     --light-text: #fefefe;
@@ -10,12 +12,12 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
 main {    
     background-color: slategrey;
-    background-image: url('images/scrimba-bg.jpeg');
+    background-image: url('images/chatbot-bg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -23,8 +25,6 @@ main {
     align-items: center;
     justify-content: center;
 }
-
-/* chatbot elements */
 
 .chatbot-container {
     background-color: #171f26;
@@ -44,8 +44,35 @@ main {
     gap: .6em;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
 .logo {
-    width: 160px;
+    width: 40px;
+    height: 40px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.h1 {
+    font-family: "Libre Franklin", sans-serif;
+    color: var(--light-text);
+    font-size: 1.4em;
+    margin: 0;
+    font-weight: 700;
+}
+
+.sub-heading {
+    font-family: 'Poppins', sans-serif;
+    color: #999999;
+    font-size: 0.8em;
+    margin: 0;
 }
 
 .chatbot-conversation-container {
@@ -54,7 +81,6 @@ main {
     margin: 1em 0;
 }
 
-/* stop ugly scroll bar on some browsers */
 .chatbot-conversation-container::-webkit-scrollbar {
     display: none;
 }
@@ -77,14 +103,14 @@ main {
 }
 
 .speech-ai {
-	background: #334959;
+    background: #334959;
     border-top-left-radius: 0;
     margin: 1.2em 1em 0 0; 
 }
 
 .speech-human {
     margin: 1.2em 0 0 1em; 
-	background: #2f4f4f;
+    background: #2f4f4f;
     border-top-right-radius: 0; 
 }
 
@@ -116,13 +142,4 @@ button {
 .send-btn-icon {
     width: 20px;
     display: block;
-}
-
-/* text */
-.sub-heading {
-    color: #999999;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    text-transform: uppercase;
-    margin: 0;
 }

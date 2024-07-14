@@ -1,33 +1,36 @@
-<!doctype html>
-<html>
-    <head>
-        <title>Pranam's ResumeBuddy</title>
-        <link rel="stylesheet" href="index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranam's ResumeBuddy</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <div class="header-content">
+                    <!-- <img src="images/icons8-bot-50.png" alt="Chatbot Logo" class="logo"> -->
+                    <div class="header-text">
+                        <h1 class="h1">Pranam's ResumeBuddy</h1>
+                        <p class="sub-heading">Too lazy to read? I've got you covered!</p>
+                    </div>
+                </div>
+            </div>
 
-    <body>
-        <main>
-            <section class="chatbot-container">
-                <div class="chatbot-header">
-                    <img src="images/logo-scrimba.svg" class="logo">
-                    <p class="sub-heading">Too lazy to read? I've got you covered!</p>
-                </div>
-                <div class="chatbot-conversation-container" id="chatbot-conversation-container">
-                </div>
-                <form id="form" class="chatbot-input-container">
-                    <input name="user-input" type="text" id="user-input" required>
-                    <button id="submit-btn" class="submit-btn">
-                            <img
-                                src="images/send.svg"   
-                                class="send-btn-icon"
-                            >
-                    </button>
-                </form>
-            </section>
-        </main>
-        <script src="client.js" type="module"></script>
-    </body>
+            <div id="chatbot-conversation-container" class="chatbot-conversation-container">
+            </div>
+
+            <div class="chatbot-input-container">
+                <input type="text" id="user-input" placeholder="Send a message">
+                <button id="submit-btn">
+                    <img src="images/send.svg" class="send-btn-icon" alt="Send">
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
 </html>
