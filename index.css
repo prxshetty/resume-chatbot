@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); /* New font import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap');
 
 :root { 
     --border-rad-lg: 15px;
     --light-text: #ffffff;
     --outline-color: #ffffff;
-    --border-rad-round: 50$;
+    --border-rad-round: 50%;
 }
 
 *, *::before, *::after {
@@ -66,20 +66,22 @@ main {
 }
 
 .h1 {
-    font-family: 'Anuphan', sans-serif;
+    font-family: 'Anuphan', sans-serif; 
     color: var(--light-text);
     font-size: 1.6em;
     margin: 0;
     font-weight: 700;
 }
+
 .sub-heading {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; 
     color: #cccccc;
     font-size: 0.9em;
     margin: 0;
     font-weight: 300;
 }
 
+/* Style for conversation container */
 .chatbot-conversation-container {
     height: 250px;
     overflow-y: scroll;
@@ -93,6 +95,7 @@ main {
 .chatbot-conversation-container::-moz-scrollbar {
     display: none;
 }
+
 
 .speech {
     padding: 1em;
@@ -119,18 +122,22 @@ main {
     border-top-right-radius: 0; 
 }
 
+
 .chatbot-input-container {
     display: flex;
     align-items: center;
-    border: 1px solid var(--outline-color); 
+    border: 1px solid var(--outline-color);
     border-radius: var(--border-rad-lg);
     overflow: hidden;
+    
 }
 
+/* Flexbox for form */
 form {
     display: flex;
     width: 100%;
 }
+
 
 input[type="text"] {
     color: var(--light-text);
@@ -140,20 +147,24 @@ input[type="text"] {
     border: none;
     outline: none;
     border-right: 1px solid var(--outline-color);
-
 }
+
 
 button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #586e88;
+    background-color: #000000;
     padding: 0.5em;
     border: none;
     cursor: pointer;
-    border-radius: var(--border-rad-round);
+    border-radius: var(--border-rad-round); 
+    width: 40px; 
+    height: 40px; 
+    margin-left: 0.5em;
 }
-
 button img {
-    width: 20px;
+    width: 100%;
+    height: 100%;
+    filter: invert(1);
 }
