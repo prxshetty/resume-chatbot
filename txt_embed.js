@@ -20,9 +20,9 @@ async function main() {
         // console.log('Extracted PDF Documents:', docs)
 
         const splitter = new RecursiveCharacterTextSplitter({
-            chunkSize: 200,
-            chunkOverlap: 25,
-            separators: ['\n\n', '\n', ' ', '']
+            chunkSize: 100,
+            chunkOverlap: 20,
+            separators: ['\n\n', '\n', '.', '']
         })
         const splitDocs = await splitter.splitDocuments(docs)
         // console.log('Split Documents:', splitDocs)

@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Cinzel:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap'); /* New font import */
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap');
 
-:root {
+:root { 
     --border-rad-lg: 15px;
-    --light-text: #fefefe;
+    --light-text: #ffffff;
+    --outline-color: #ffffff;
+    --border-rad-round: 50$;
 }
 
 *, *::before, *::after {
@@ -12,7 +16,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 main {    
@@ -27,11 +31,12 @@ main {
 }
 
 .chatbot-container {
-    background-color: #171f26;
+    background-color: #000000;
     width: 360px;
     min-height: 380px;
     border-radius: var(--border-rad-lg);
-    padding: 1em;  
+    padding: 1.5em;
+    border: 1px solid #ffffff;
 }
 
 .chatbot-container > * {
@@ -61,18 +66,18 @@ main {
 }
 
 .h1 {
-    font-family: "Libre Franklin", sans-serif;
+    font-family: 'Anuphan', sans-serif;
     color: var(--light-text);
-    font-size: 1.4em;
+    font-size: 1.6em;
     margin: 0;
     font-weight: 700;
 }
-
 .sub-heading {
-    font-family: 'Poppins', sans-serif;
-    color: #999999;
-    font-size: 0.8em;
+    font-family: 'Roboto', sans-serif;
+    color: #cccccc;
+    font-size: 0.9em;
     margin: 0;
+    font-weight: 300;
 }
 
 .chatbot-conversation-container {
@@ -116,30 +121,39 @@ main {
 
 .chatbot-input-container {
     display: flex;
+    align-items: center;
+    border: 1px solid var(--outline-color); 
+    border-radius: var(--border-rad-lg);
+    overflow: hidden;
 }
 
-input[type="text"], button {
-    background-color: transparent;
-    border: 1px solid #586e88;
-    border-radius: var(--border-rad-lg);
-    padding: 1em;
+form {
+    display: flex;
+    width: 100%;
 }
 
 input[type="text"] {
     color: var(--light-text);
-    width: 100%;
-    border-right: 0; 
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    flex: 1;
+    padding: 1em;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-right: 1px solid var(--outline-color);
+
 }
 
 button {
-    border-left: 0; 
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #586e88;
+    padding: 0.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--border-rad-round);
 }
 
-.send-btn-icon {
+button img {
     width: 20px;
-    display: block;
 }

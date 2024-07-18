@@ -12,7 +12,6 @@
         <div class="chatbot-container">
             <div class="chatbot-header">
                 <div class="header-content">
-                    <!-- <img src="images/icons8-bot-50.png" alt="Chatbot Logo" class="logo"> -->
                     <div class="header-text">
                         <h1 class="h1">Pranam's ResumeBuddy</h1>
                         <p class="sub-heading">Too lazy to read? I've got you covered!</p>
@@ -24,13 +23,15 @@
             </div>
 
             <div class="chatbot-input-container">
-                <input type="text" id="user-input" placeholder="Send a message">
-                <button id="submit-btn">
-                    <img src="images/send.svg" class="send-btn-icon" alt="Send">
-                </button>
+                <form id="form">
+                    <input type="text" id="user-input" placeholder="Send a message">
+                    <button type="submit" id="submit-btn">
+                        <img src="images/send-img.jpg" class="send-btn-icon" alt="Send">
+                    </button>
+                </form>
             </div>
         </div>
     </main>
-    <script src="index.js"></script>
+    <script src="client.js"></script>
 </body>
 </html>
