@@ -10,7 +10,7 @@ dotenv.config()
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const pdfPath = path.join(__dirname, 'PranamShettyF_Resume.pdf')
+const pdfPath = path.join(__dirname, 'docs/PranamShettyF_Resume.pdf')
 // console.log('Current directory:', __dirname)
 // console.log('Resolved PDF path:', pdfPath)
 async function main() {
@@ -21,7 +21,7 @@ async function main() {
 
         const splitter = new RecursiveCharacterTextSplitter({
             chunkSize: 100,
-            chunkOverlap: 20,
+            chunkOverlap: 10,
             separators: ['\n\n', '\n', '.', '']
         })
         const splitDocs = await splitter.splitDocuments(docs)
