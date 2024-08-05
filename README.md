@@ -4,7 +4,7 @@
 
 ## Overview
 
-Pranam's ResumeBuddy is an intelligent chatbot designed to assist users in navigating and querying Pranam's resume. Built with modern web technologies and natural language processing capabilities, this chatbot aims to streamline the job application process by providing instant, context-aware responses to resume-related queries.
+LLM Chatbot("Pranam's ResumeBuddy) using Supabase for vectoreStore, OpenAI API for embeddings with adjusted chunk size and overlaps for Resumes.
 
 ## Features
 
