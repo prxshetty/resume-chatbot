@@ -4,7 +4,7 @@
 
 ## Overview
 
-LLM Chatbot("Pranam's ResumeBuddy) using Supabase for vectoreStore, OpenAI API for embeddings with adjusted chunk size and overlaps for Resumes.
+LLM Chatbot(ResumeBuddy) built using Supabase for vectoreStore, OpenAI API for embeddings with adjusted chunk size and overlaps for Resumes.
 
 ## Features
 
